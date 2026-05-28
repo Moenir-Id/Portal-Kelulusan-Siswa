@@ -1,0 +1,28 @@
+# Masuk ke folder proyek
+cd C:\laragon\www\proyek-a
+
+# 1. Install dependencies
+composer install
+
+# 2. Buat file .env
+cp .env.example .env
+
+# 3. Generate app key
+php artisan key:generate
+
+# 4. Buat database dulu di MySQL (via HeidiSQL / phpMyAdmin / Laragon UI)
+#    nama db: kelulusan_a (atau terserah)
+
+# 5. Sesuaikan .env
+#    DB_DATABASE=kelulusan_a
+#    DB_USERNAME=root
+#    DB_PASSWORD=
+
+# 6. Jalankan migrasi
+php artisan migrate
+
+# 7. Buat symlink storage
+php artisan storage:link
+
+# 8. Jalankan seeder (kalau ada)
+php artisan db:seed

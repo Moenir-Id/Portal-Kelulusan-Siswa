@@ -1,0 +1,9 @@
+{
+  "appId": "com.maaz.skl",
+  "appName": "SKL MAAZ",
+  "webDir": "public",
+  "server": {
+    "url": "https://skl-maaz.gt.tc",
+    "cleartext": false
+  }
+}

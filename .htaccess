@@ -1,0 +1,4 @@
+RewriteEngine On
+# If the request isn't already for the public folder, sent it there
+RewriteCond %{REQUEST_URI} !^/public/
+RewriteRule ^(.*)$ public/$1 [L]
