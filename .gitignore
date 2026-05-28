@@ -3,7 +3,7 @@
 .env
 .env.backup
 .env.production
-infinityfree.env
+- infinityfree.env
 .env.example
 .phpactor.json
 .phpunit.result.cache
